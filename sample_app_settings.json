@@ -1,6 +1,8 @@
 {
   "FACE_ENDPOINT": "https://your_url_here.cognitiveservices.azure.com",
   "FACE_APIKEY": "key_goes_here",
-  "WEBSITES_PORT": "8000"
+  "WEBSITES_PORT": "8000",
+  "PUSHOVER_USER_KEY": "wibble",
+  "PUSHOVER_API_TOKEN": "dibble"
 }
 
