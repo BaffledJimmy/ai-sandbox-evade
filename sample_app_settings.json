@@ -1,0 +1,6 @@
+{
+  "FACE_ENDPOINT": "https://your_url_here.cognitiveservices.azure.com",
+  "FACE_APIKEY": "key_goes_here",
+  "WEBSITES_PORT": "8000"
+}
+
