@@ -176,3 +176,9 @@ cython_debug/
 .DS_Store
 
 app.zip
+
+appsettings.json
+
+.azure/config
+
+detections.csv
