@@ -42,8 +42,10 @@ def detect_face():
     detected = len(faces) > 0
     app.logger.info(f"Faces detected: {len(faces)}")
 
-    ip = request.remote_addr or ""
-    ua = request.headers.get("User-Agent", "")
+    user_agent = request.headers.get("User-Agent", "")
+    ip_address = request.headers.get("X-Forwarded-For", request.remote_addr)
+    if ip_address and "," in ip_address:
+      ip_address = ip_address.split(",")[0].strip()
 
     try:
         with open(CSV_FILE, "a", newline="") as f:
